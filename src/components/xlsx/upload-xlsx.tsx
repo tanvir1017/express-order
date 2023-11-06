@@ -73,7 +73,10 @@ const UploadXlsx = () => {
                         {xlsxData.map((row, index) => (
                           <tr key={index} className="divide-x divide-gray-200">
                             {Object.values(row).map((value, index) => (
-                              <td className="whitespace-nowrap px-12 py-4">
+                              <td
+                                className="whitespace-nowrap px-12 py-4"
+                                key={index}
+                              >
                                 <div className="text-sm text-gray-900">
                                   {value as any}
                                 </div>
